@@ -4,9 +4,25 @@
         <servlet-name>GetVisitTimeSlot</servlet-name>
         <servlet-class>GetVisitTimeSlot</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GetHomesJSON</servlet-name>
+        <servlet-class>GetHomesJSON</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetHomeDetails</servlet-name>
+        <servlet-class>GetHomeDetails</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>GetVisitTimeSlot</servlet-name>
         <url-pattern>/GetVisitTimeSlot</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetHomesJSON</servlet-name>
+        <url-pattern>/GetHomesJSON</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetHomeDetails</servlet-name>
+        <url-pattern>/GetHomeDetails</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
