@@ -67,8 +67,7 @@ public class homeDetailsFragment extends Fragment {
     private int tohours,tominutes;
     static final int DATE_DIALOG_ID = 0;
     static final int TIME_DIALOG_ID =1;
-    static final String userName = "Gaurav";
-    static final String ownerName="Raghav";
+    static final String userName = "ebc@gmail.com";
     private DatePickerDialog.OnDateSetListener pDateSetListener =
             new DatePickerDialog.OnDateSetListener() {
                 @Override
@@ -250,7 +249,7 @@ public class homeDetailsFragment extends Fragment {
                     isValidTime=false;
                     Toast.makeText(getActivity(), "Date cant be older than current date", Toast.LENGTH_LONG).show();
                 }
-                
+
                 if(isValidTime==true) {
                     String[] availparams = new String[]{url1, id, dateToVisit, fromTime, toTime, userName};
                     SendHttpRequestTaskForCheckAvailability availtask = new SendHttpRequestTaskForCheckAvailability();
