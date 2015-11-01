@@ -52,9 +52,9 @@ public class GetVisitTimeSlot extends HttpServlet {
             }
             */
             String startDate = request.getParameter("startDate");
-            String endDate = request.getParameter("endDate");
+            String fromtime = request.getParameter("fromtime");
             System.out.println("START DATE : "+startDate);
-            System.out.println("END DATE : "+endDate);
+            System.out.println("END DATE : "+fromtime);
             /*
             String sql="INSERT INTO book_table (BOOK_NAME, BOOK_AUTHOR, BOOK_SIZE) values (?, ?, ?)";
             PreparedStatement statement=conn.prepareStatement(sql);

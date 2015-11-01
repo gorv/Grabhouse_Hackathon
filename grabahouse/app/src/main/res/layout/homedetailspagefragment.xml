@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -36,17 +40,68 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Description : "
+        android:text="Location : "
         android:paddingLeft="30px"
         android:paddingTop="10px"
         android:textStyle="italic"
         android:id="@+id/descriptionLabel" />
 
-    <WebView
-        android:layout_width="match_parent"
+
+    <TextView
+        android:layout_width="174dp"
+        android:paddingLeft="30px"
+        android:paddingTop="10px"
         android:layout_height="wrap_content"
-        android:id="@+id/home_location_map"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Owner Email : "
+        android:id="@+id/owner_email_textbox" />
+
+    <TextView
+        android:layout_width="174dp"
+        android:paddingLeft="30px"
+        android:paddingTop="10px"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Owner Phone : "
+        android:id="@+id/owner_phone_textbox" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Date of visit "
+        android:id="@+id/visitDate"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal" />
 
 
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content">
+        <Button android:text="Time From"
+            android:id="@+id/timefromBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </Button>
+        <Button android:text="Time To"
+            android:id="@+id/timetoBtn"
+            android:layout_toRightOf="@+id/timefromBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </Button>
+    </LinearLayout>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Book my visit "
+        android:id="@+id/bookBtn"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:layout_gravity="center_horizontal" />
+
 </LinearLayout>
+</ScrollView>

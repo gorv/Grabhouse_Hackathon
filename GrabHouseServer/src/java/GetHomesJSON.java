@@ -66,6 +66,8 @@ public class GetHomesJSON extends HttpServlet {
                     temp.put("HOME_LOCATION_URL", rs.getString(4));
                     temp.put("HOME_IMAGE_URL", rs.getString(5));
                     temp.put("HOME_RENT", rs.getString(6));
+                    temp.put("OWNER_EMAIL", rs.getString(7)+"@gmail.com");
+                    temp.put("OWNER_PHONE",rs.getString(8));
                     jsonArray.put(temp);
 
                 } catch (JSONException e) {
